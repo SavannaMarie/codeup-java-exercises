@@ -20,5 +20,7 @@ public class CollectionsLecture {
         squares.put('A', new Square(5));
         System.out.println(squares.get('A').getArea());
 
+
+
     }
 }

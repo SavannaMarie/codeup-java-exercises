@@ -19,11 +19,5 @@ public class CollectionsLecture {
         HashMap<Character, Square> squares = new HashMap<>();
         squares.put('A', new Square(5));
         System.out.println(squares.get('A').getArea());
-
-
-
-
-
-
     }
 }

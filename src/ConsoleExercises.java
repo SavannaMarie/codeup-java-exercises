@@ -9,7 +9,13 @@ public class ConsoleExercises {
         Scanner newInteger = new Scanner(System.in);
         System.out.println("Please enter a number.");
         int userInput = newInteger.nextInt();
-        System.out.printf("Your number was %d.", userInput);
+        System.out.printf("Your number was %d.%n", userInput);
+
+        System.out.println("Please enter 3 words.");
+        String first = newInteger.next();
+        String second = newInteger.next();
+        String third = newInteger.next();
+        System.out.printf("Your 3 words were: %s, %s, and %s%n", first, second, third);
 
 
     }

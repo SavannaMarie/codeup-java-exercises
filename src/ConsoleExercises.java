@@ -28,7 +28,7 @@ public class ConsoleExercises {
         String roomLength = newScanner.nextLine();
         int newLength = Integer.parseInt(roomLength);
         System.out.println(newLength);
-        System.out.println("Please enter the width and width of the classroom: ");
+        System.out.println("Please enter the width of the classroom: ");
         String roomWidth = newScanner.nextLine();
         int newWidth = Integer.parseInt(roomWidth);
         System.out.println(newWidth);

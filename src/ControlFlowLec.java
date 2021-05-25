@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowLec {
     public static void main(String[] args) {
 
@@ -40,12 +42,59 @@ public class ControlFlowLec {
 //                break;
 //        }
 
-        boolean existence = true;
-        if (existence){
-            System.out.println("The programmer is a real being");
+//        boolean existence = true;
+//        if (existence){
+//            System.out.println("The programmer is a real being");
+//        }
+
+
+        //======Logical operators ========//
+//        int c = 0, d = 100, e = 50;
+//
+//
+//        //short circuit operator
+//        if (c == 1 && e++ < 100) {
+//            //do something
+//        }
+//            System.out.println("e = " + e);
+//        if (c == 0 && e++ < 100) {
+//            //do something
+//        }
+//        System.out.println("e = " + e);
+//
+//
+//        //non short circuit operator.
+//        // & will always test both conditions,
+//        // && will only test both if the first executes as true
+//        if (c == 1 & e++ < 100){
+//            //anything here
+//        }
+//        System.out.println("e = " + e);
+
+//        String myName = "Savanna";
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What is your name?");
+//        String userInput = scanner.next();
+//        if (userInput == myName){
+//            System.out.println("Hello me!");
+//        } else {
+//            System.out.println("You are not me!");
+//        }
+//        if (userInput.equals(myName)){
+//            System.out.println("Hello me!");
+//        } else {
+//            System.out.println("Not me!");
+//        }
+
+
+        //====Loops====//
+        int i = 1;
+        while (i < 10){
+            System.out.println("Now i'm in the loop which has not incremented yet and it's value is " + i++);
         }
 
-
+        //====Do While====//
 
 
     }

@@ -89,14 +89,20 @@ public class ControlFlowLec {
 
 
         //====Loops====//
-        int i = 1;
-        while (i < 10){
-            System.out.println("Now i'm in the loop which has not incremented yet and it's value is " + i++);
-        }
+//        int i = 1;
+//        while (i < 10){
+//            System.out.println("Now i'm in the loop which has not incremented yet and it's value is " + i++);
+//        }
 
         //====Do While====//
-
-
+//        for (int i = 0; i < 10; i++){
+//            System.out.println("inside the loop" + i);
+//        }
+//        //Cannot access the variable outside the block
+        for (int i = 100; i >= 1; i--){
+            System.out.println( i + " bottles of big red on the wall");
+            System.out.println( i + "bottles of big red");
+        }
     }
 }
 

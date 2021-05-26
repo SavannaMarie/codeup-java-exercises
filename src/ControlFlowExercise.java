@@ -100,11 +100,7 @@ public class ControlFlowExercise {
             System.out.println("number! | squared! | cubed!");
             System.out.println("------ | ------- | -----");
             for(int i = 1; i <= number; i++) {
-                System.out.print(i);
-                System.out.print(" | ");
-                System.out.print(i * i);
-                System.out.print(" | ");
-                System.out.print(i * i * i);
+                System.out.print(i + " | " + (i * i) + " | " + (i * i * i));
                 System.out.println();
             }
             System.out.println("Would you like to enter a number?");

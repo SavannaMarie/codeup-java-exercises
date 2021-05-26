@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercise {
     public static void main(String[] args) {
 
@@ -35,11 +37,11 @@ public class ControlFlowExercise {
 //            i -= 5;
 //        } while (i >= -10);
 
-        long i = 2;
-        do {
-            System.out.println(i);
-            i *= i;
-        } while (i  <= 1000000);
+//        long i = 2;
+//        do {
+//            System.out.println(i);
+//            i *= i;
+//        } while (i  <= 1000000);
 
 
         /*Refactor the previous two exercises to use a for loop instead.*/
@@ -49,9 +51,9 @@ public class ControlFlowExercise {
 //        for (int i = 0; i <= 100; i+= 2){
 //            System.out.println(i);
 //        }
-        for (long x = 2; x <= 1000000; x *= x){
-            System.out.println(x);
-        }
+//        for (long x = 2; x <= 1000000; x *= x){
+//            System.out.println(x);
+//        }
 
 
         /*You have to design the code such that the user has only three tries to guess the correct pin of the account. You set the pin as a constant with a final attribute. When correct display "Correct, welcome back." When incorrect display "Incorrect, try again.". When user runs out of tries display "Sorry but you have been locked out."
@@ -70,8 +72,18 @@ public class ControlFlowExercise {
         Correct, welcome back.
         */
 
-
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter pin: ");
+        final int pin = 1234;
+        for (int i = 1; i <= 3; i++) {
+            int attempt = scanner.nextInt();
+            if (attempt == pin) {
+                System.out.println("Correct, welcome back!");
+            } else {
+                System.out.println("Incorrect, try again.");
+            } if (i == 3)
+            System.out.print("Sorry but you have been locked out.");
+        }
 
     }
 }

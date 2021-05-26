@@ -119,21 +119,20 @@ public class ControlFlowExercise {
         The application should only continue if the user agrees to.
         */
 
-
-        System.out.println("Would you like to find out your grade?");
-        String answer = scanner.next().toLowerCase();
-        if(answer.equals("yes")) {
-            System.out.println("Enter your grade 0-100");
-            int grade = scanner.nextInt();
-            if ((grade >= 88) && (grade <= 100)) {
-                System.out.println("Your grade is an A!");
-            } else if ((grade >= 80) && (grade <= 87)) {
-                System.out.println("Your grade is a B!");
-            } else if ((grade >= 67) && (grade <= 79)) {
-                System.out.println("Your grade is a C!");
-            } else if (grade <= 59) {
-                System.out.println("Your grade is a F!");
+            System.out.println("Would you like to find out your grade?");
+            String answer = scanner.next().toLowerCase();
+            if (answer.equals("yes")) {
+                System.out.println("Enter your grade 0-100");
+                int grade = scanner.nextInt();
+                if ((grade >= 88) && (grade <= 100)) {
+                    System.out.println("Your grade is an A!");
+                } else if ((grade >= 80) && (grade <= 87)) {
+                    System.out.println("Your grade is a B!");
+                } else if ((grade >= 67) && (grade <= 79)) {
+                    System.out.println("Your grade is a C!");
+                } else if (grade <= 59) {
+                    System.out.println("Your grade is a F!");
+                }
             }
-        }
     }
 }

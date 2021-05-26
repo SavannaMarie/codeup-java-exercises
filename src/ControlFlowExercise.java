@@ -92,26 +92,26 @@ public class ControlFlowExercise {
         Assume that the user will enter valid data.
         Only continue if the user agrees to.*/
 
-        boolean response = true;
-        do{
-            System.out.println("What number would you like to go up to?");
-            int number = scanner.nextInt();
-            System.out.println("number! | squared! | cubed!");
-            System.out.println("------ | ------- | -----");
-            for(int i = 1; i <= number; i++) {
-                System.out.printf("%-6d", i);
-                System.out.print(" | ");
-                System.out.printf("%-7d", i * i);
-                System.out.print(" | ");
-                System.out.print(i * i * i);
-                System.out.println();
-            }
-            System.out.println("Would you like to enter a number?");
-            String answer = scanner.next().toLowerCase();
-            if(!answer.equals("yes")) {
-                response = false;
-            }
-        } while (response);
+//        boolean response = true;
+//        do{
+//            System.out.println("What number would you like to go up to?");
+//            int number = scanner.nextInt();
+//            System.out.println("number! | squared! | cubed!");
+//            System.out.println("------ | ------- | -----");
+//            for(int i = 1; i <= number; i++) {
+//                System.out.printf("%-6d", i);
+//                System.out.print(" | ");
+//                System.out.printf("%-7d", i * i);
+//                System.out.print(" | ");
+//                System.out.print(i * i * i);
+//                System.out.println();
+//            }
+//            System.out.println("Would you like to enter a number?");
+//            String answer = scanner.next().toLowerCase();
+//            if(!answer.equals("yes")) {
+//                response = false;
+//            }
+//        } while (response);
 
         /*
         Convert given number grades into letter grades.

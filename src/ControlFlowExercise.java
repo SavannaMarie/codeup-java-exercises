@@ -73,17 +73,49 @@ public class ControlFlowExercise {
         */
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter pin: ");
-        final int pin = 1234;
-        for (int i = 1; i <= 3; i++) {
-            int attempt = scanner.nextInt();
-            if (attempt == pin) {
-                System.out.println("Correct, welcome back!");
-            } else {
-                System.out.println("Incorrect, try again.");
-            } if (i == 3)
-            System.out.print("Sorry but you have been locked out.");
-        }
+//        System.out.print("Please enter pin: ");
+//        final int pin = 1234;
+//        for (int i = 1; i <= 3; i++) {
+//            int attempt = scanner.nextInt();
+//            if (attempt == pin) {
+//                System.out.println("Correct, welcome back!");
+//            } else {
+//                System.out.println("Incorrect, try again.");
+//            } if (i == 3) {
+//                System.out.print("Sorry but you have been locked out.");
+//            }
+//        }
+
+        /*Display a table of powers.
+        Prompt the user to enter an integer.
+        Display a table of squares and cubes from 1 to the value entered.
+        Ask if the user wants to continue.
+        Assume that the user will enter valid data.
+        Only continue if the user agrees to.*/
+
+        boolean response = true;
+        do{
+            System.out.println("What number would you like to go up to?");
+            int number = scanner.nextInt();
+            System.out.println("number! | squared! | cubed!");
+            System.out.println("------ | ------- | -----");
+            for(int i = 1; i <= number; i++) {
+                System.out.print(i);
+                System.out.print(" | ");
+                System.out.print(i * i);
+                System.out.print(" | ");
+                System.out.print(i * i * i);
+                System.out.println();
+            }
+            System.out.println("Would you like to enter a number?");
+            String answer = scanner.next().toLowerCase();
+            if(!answer.equals("yes")) {
+                response = false;
+            }
+        } while (response);
+
+
+
 
     }
 }

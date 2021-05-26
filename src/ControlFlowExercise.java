@@ -93,25 +93,47 @@ public class ControlFlowExercise {
         Assume that the user will enter valid data.
         Only continue if the user agrees to.*/
 
-        boolean response = true;
-        do{
-            System.out.println("What number would you like to go up to?");
-            int number = scanner.nextInt();
-            System.out.println("number! | squared! | cubed!");
-            System.out.println("------ | ------- | -----");
-            for(int i = 1; i <= number; i++) {
-                System.out.print(i + " | " + (i * i) + " | " + (i * i * i));
-                System.out.println();
+//        boolean response = true;
+//        do{
+//            System.out.println("What number would you like to go up to?");
+//            int number = scanner.nextInt();
+//            System.out.println("number! | squared! | cubed!");
+//            System.out.println("------ | ------- | -----");
+//            for(int i = 1; i <= number; i++) {
+//                System.out.print(i + " | " + (i * i) + " | " + (i * i * i));
+//                System.out.println();
+//            }
+//            System.out.println("Would you like to enter a number?");
+//            String answer = scanner.next().toLowerCase();
+//            if(!answer.equals("yes")) {
+//                response = false;
+//            }
+//        } while (response);
+
+        /*
+        Convert given number grades into letter grades.
+        Prompt the user for a numerical grade from 0 to 100.
+        Display the corresponding letter grade.
+        Prompt the user to continue.
+        Assume that the user will enter valid integers for the grades.
+        The application should only continue if the user agrees to.
+        */
+
+
+        System.out.println("Would you like to find out your grade?");
+        String answer = scanner.next().toLowerCase();
+        if(answer.equals("yes")) {
+            System.out.println("Enter your grade 0-100");
+            int grade = scanner.nextInt();
+            if ((grade >= 88) && (grade <= 100)) {
+                System.out.println("Your grade is an A!");
+            } else if ((grade >= 80) && (grade <= 87)) {
+                System.out.println("Your grade is a B!");
+            } else if ((grade >= 67) && (grade <= 79)) {
+                System.out.println("Your grade is a C!");
+            } else if (grade <= 59) {
+                System.out.println("Your grade is a F!");
             }
-            System.out.println("Would you like to enter a number?");
-            String answer = scanner.next().toLowerCase();
-            if(!answer.equals("yes")) {
-                response = false;
-            }
-        } while (response);
-
-
-
-
+        }
     }
 }

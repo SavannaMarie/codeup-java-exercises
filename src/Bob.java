@@ -21,7 +21,7 @@ public class Bob {
             } else {
                 System.out.println("Whatever.");
             }
-        } while(!finished);
+        } while(finished == false);
 
 
 

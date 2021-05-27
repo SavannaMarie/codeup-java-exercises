@@ -10,19 +10,19 @@ public class StringExercise {
             and the amazing triple backslash \\\!
          */
 
-//        String weDontNeed = "We don't need no education\n" + "We don't need no thought control ";
-//        System.out.println(weDontNeed);
-//        System.out.println();
-//
-//        String checkThisOut = "Check \"this\" out!, \"s inside of \"s!";
-//        System.out.println(checkThisOut);
-//        System.out.println();
-//
-//        String inWindows = "In windows, the main drive is usually C:\\";
-//        System.out.println(inWindows);
-//        System.out.println();
-//
-//        String backslashes = "I can do backlashes \\, double backlashes \\\\, and the amazing triple backlash \\\\\\!";
-//        System.out.println(backslashes);
+        String weDontNeed = "We don't need no education\n" + "We don't need no thought control ";
+        System.out.println(weDontNeed);
+        System.out.println();
+
+        String checkThisOut = "Check \"this\" out!, \"s inside of \"s!";
+        System.out.println(checkThisOut);
+        System.out.println();
+
+        String inWindows = "In windows, the main drive is usually C:\\";
+        System.out.println(inWindows);
+        System.out.println();
+
+        String backslashes = "I can do backlashes \\, double backlashes \\\\, \n and the amazing triple backlash \\\\\\!";
+        System.out.println(backslashes);
     }
 }

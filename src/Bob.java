@@ -1,11 +1,9 @@
 import java.util.Scanner;
-
 public class Bob {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please introduce yourself to Bob!");
         System.out.println("When you are done with Bob just say: \n\"I'm done with you\".");
-
         boolean finished = false;
         do {
             String userInput = scanner.nextLine().trim();
@@ -22,9 +20,5 @@ public class Bob {
                 System.out.println("Whatever.");
             }
         } while(finished == false);
-
-
-
-
     }
 }

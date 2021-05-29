@@ -36,7 +36,6 @@ public class MethodsExercises {
         for(int i = 1; i <= userNumber; i++){
             System.out.printf((result *= i) + ", ");
 //            result *= i;
-
         }
         System.out.println("\nYour factorial is: " + result);
         System.out.println("Do you want to continue?");

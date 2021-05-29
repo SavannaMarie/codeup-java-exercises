@@ -46,11 +46,7 @@ public class MethodsExercises {
             factorial();
         }
         return result;
-
     }
-
-
-
 
     public static void main(String[] args) {
 //        System.out.println(addition(2, 5));
@@ -60,6 +56,5 @@ public class MethodsExercises {
 //        System.out.println(modulus(20, 3));
 //        System.out.println(getInteger(1, 20));
         factorial();
-
     }
 }

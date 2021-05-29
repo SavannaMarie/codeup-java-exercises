@@ -34,9 +34,11 @@ public class MethodsExercises {
         long userNumber = getInteger(1, 10);
         long result = 1;
         for(int i = 1; i <= userNumber; i++){
-            result *= i;
+            System.out.printf((result *= i) + ", ");
+//            result *= i;
+
         }
-        System.out.println("Your factorial is: " + result);
+        System.out.println("\nYour factorial is: " + result);
         System.out.println("Do you want to continue?");
         Scanner scanner = new Scanner(System.in);
         String userAnswer = scanner.nextLine();

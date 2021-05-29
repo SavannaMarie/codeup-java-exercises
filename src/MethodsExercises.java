@@ -25,9 +25,25 @@ public class MethodsExercises {
             System.out.println("Try again!");
             return getInteger(min, max);
         } else {
-            System.out.printf("Thank you for following directions! Your number was %d!%n", userNumber);
+            System.out.printf("Your number was: %d%n", userNumber);
             return userNumber;
         }
+
+    }
+    public static long factorial(){
+        long userNumber = getInteger(1, 10);
+        long result = 1;
+        for(int i = 1; i <= userNumber; i++){
+            result *= i;
+        }
+        System.out.println("Your factorial is: " + result);
+        System.out.println("Do you want to continue?");
+        Scanner scanner = new Scanner(System.in);
+        String userAnswer = scanner.nextLine();
+        if(userAnswer.equalsIgnoreCase("yes")) {
+            factorial();
+        }
+        return result;
 
     }
 
@@ -35,13 +51,13 @@ public class MethodsExercises {
 
 
     public static void main(String[] args) {
-        System.out.println(addition(2, 5));
-        System.out.println(subtraction(6, 3));
-        System.out.println(multiply(5, 5));
-        System.out.println(division(10, 2));
-        System.out.println(modulus(20, 3));
-
-        System.out.println(getInteger(1, 20));
+//        System.out.println(addition(2, 5));
+//        System.out.println(subtraction(6, 3));
+//        System.out.println(multiply(5, 5));
+//        System.out.println(division(10, 2));
+//        System.out.println(modulus(20, 3));
+//        System.out.println(getInteger(1, 20));
+        factorial();
 
     }
 }

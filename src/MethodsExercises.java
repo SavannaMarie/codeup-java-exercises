@@ -28,7 +28,6 @@ public class MethodsExercises {
             System.out.printf("Your number was: %d%n", userNumber);
             return userNumber;
         }
-
     }
     public static long factorial(){
         long userNumber = getInteger(1, 10);
@@ -46,6 +45,21 @@ public class MethodsExercises {
         }
         return result;
     }
+    public static void diceRoll() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many sides does your dice have?");
+        int diceSides = scanner.nextInt();
+        int sides = (diceSides - 1) + 1;
+        for (int i = 1; i <= 2; i++ ) {
+            int rollresults = (int)(Math.random() * sides) + 1;
+            System.out.printf("Roll number %d was %d.\n", i, rollresults);
+        }
+        System.out.println("Another roll?");
+        String userAnswer = scanner.next();
+        if(userAnswer.equalsIgnoreCase("yes")) {
+            diceRoll();
+        }
+    }
 
     public static void main(String[] args) {
 //        System.out.println(addition(2, 5));
@@ -55,5 +69,6 @@ public class MethodsExercises {
 //        System.out.println(modulus(20, 3));
 //        System.out.println(getInteger(1, 20));
         factorial();
+        diceRoll();
     }
 }

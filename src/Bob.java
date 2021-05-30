@@ -6,7 +6,7 @@ public class Bob {
         System.out.println("When you are done with Bob just say: \n\"I'm done with you\".");
         boolean finished = false;
         do {
-            String userInput = scanner.nextLine()
+            String userInput = scanner.nextLine();
             if (userInput.endsWith("?")) {
                 System.out.println("Sure.");
             } else if (userInput.endsWith("!")) {

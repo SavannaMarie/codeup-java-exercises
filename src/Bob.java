@@ -6,12 +6,12 @@ public class Bob {
         System.out.println("When you are done with Bob just say: \n\"I'm done with you\".");
         boolean finished = false;
         do {
-            String userInput = scanner.nextLine().trim();
+            String userInput = scanner.nextLine()
             if (userInput.endsWith("?")) {
                 System.out.println("Sure.");
             } else if (userInput.endsWith("!")) {
                 System.out.println("Whoa, chill out!");
-            } else if (userInput.trim().isEmpty()) {
+            } else if (userInput.isEmpty()) {
                 System.out.println("Fine! be that way!");
             } else if (userInput.equalsIgnoreCase("I'm done with you")) {
                 System.out.println("Ugh! I'm so over this!");

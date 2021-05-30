@@ -49,9 +49,12 @@ public class MethodsExercises {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many sides does your dice have?");
         int diceSides = scanner.nextInt();
-        int sides = (diceSides - 1) + 1;
         for (int i = 1; i <= 2; i++ ) {
-            int rollresults = (int)(Math.random() * sides) + 1;
+            if (diceSides == 0) {
+                System.out.println("You cannot have a zero sided die!");
+                diceRoll();
+            }
+            int rollresults = (int)(Math.random() * diceSides) + 1;
             System.out.printf("Roll number %d was %d.\n", i, rollresults);
         }
         System.out.println("Another roll?");
@@ -68,7 +71,7 @@ public class MethodsExercises {
 //        System.out.println(division(10, 2));
 //        System.out.println(modulus(20, 3));
 //        System.out.println(getInteger(1, 20));
-        factorial();
+//        factorial();
         diceRoll();
     }
 }

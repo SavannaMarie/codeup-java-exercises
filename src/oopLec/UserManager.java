@@ -23,16 +23,20 @@ public class UserManager {
             System.out.println("Sorry, you are currently logged out, please log in.");
             UserTools.logIn(u);
         } else {
-            System.out.println("Welcome to your preferences. Would you like to:\n1.Change your password.\n2.Log out");
+            System.out.println("Welcome to your preferences. Would you like to:\n1.Change your password.\n2.View Credentials.\n3: Log Out");
             int userChoice = scanner.nextInt();
-            System.out.println("You chose to choice " + userChoice);
+            System.out.println("Your choice was: " + userChoice);
             switch (userChoice) {
                 case 1:
                     UserTools.changePassword(u);
                     editPreferences(u);
                     break;
                 case 2:
+                    u.describeUser();
+                    editPreferences(u);
+                default:
                     UserTools.logOut(u);
+                    startMenu(u);
             }
         }
     }

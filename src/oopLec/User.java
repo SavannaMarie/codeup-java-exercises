@@ -2,7 +2,7 @@ package oopLec;
 
 public class User {
     public int id;
-    public String username;
+    private String username;
     private String password;
     public String email;
     private boolean isLoggedIn = false;
@@ -10,6 +10,7 @@ public class User {
     public String getPassword(){
         return password;
     }
+
 
     public User(int id, String username, String password, String email, boolean isLoggedIn) {
         this.id = id;
@@ -31,6 +32,14 @@ public class User {
         this.isLoggedIn = loggedIn;
     }
 
+    public void describeUser(){
+        System.out.println("Username: " + this.username);
+        System.out.println("Password: " + this.password);
+        System.out.println("Email: " + this.email);
+        System.out.println("Logged in? " + this.isLoggedIn);
+
+    }
+
     public User(String username, String password, String email) {
         this.username = username;
         this.password = password;
@@ -42,9 +51,9 @@ public class User {
     public static void main(String[] args) {
         User testUser = new User();
         testUser.id = 1;
-        testUser.username = "jayman";
+        testUser.username = "Savanna";
         testUser.password = "password";
-        testUser.email = "jayman@email.com";
+        testUser.email = "savanna@email.com";
 
         System.out.println("Username: " + testUser.username);
         System.out.println("Password: " + testUser.password);

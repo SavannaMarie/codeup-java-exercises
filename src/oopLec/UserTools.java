@@ -15,6 +15,7 @@ public class UserTools {
             System.out.println("You have successfully logged in!");
         } else {
             System.out.println("That password is incorrect.");
+            logIn(u);
         }
     }
 
@@ -49,15 +50,15 @@ public class UserTools {
     }
 
     public static void main(String[] args) {
-        User testUser = new User();
-        testUser.id = 1;
-        testUser.username = "Savanna";
-        // if password was public
-//        testUser.password = "password";
-        // if password is private
-        testUser.setPassword("password");
-        testUser.email = "savanna@email.com";
-        logIn(testUser);
+//        User testUser = new User();
+//        testUser.id = 1;
+//        testUser.username = "Savanna";
+//        // if password was public
+////        testUser.password = "password";
+//        // if password is private
+//        testUser.setPassword("password");
+//        testUser.email = "savanna@email.com";
+//        logIn(testUser);
 
 //        User user2 = new User("codeup-dude", "gocodeup", "codeup@email.com");
 //
@@ -69,7 +70,7 @@ public class UserTools {
 //
 //        System.out.println(user2.getPassword());
 
-        changePassword(testUser);
+//        changePassword(testUser);
 
     }
 }

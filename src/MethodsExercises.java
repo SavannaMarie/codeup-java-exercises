@@ -52,7 +52,7 @@ public class MethodsExercises {
         for (int i = 1; i <= 2; i++ ) {
             if (diceSides == 0) {
                 System.out.println("You cannot have a zero sided die!");
-                diceRoll();
+                break;
             }
             int rollresults = (int)(Math.random() * diceSides) + 1;
             System.out.printf("Roll number %d was %d.\n", i, rollresults);

@@ -17,6 +17,7 @@ public class Car  {
         car1.year = 2021;
         car1.model = "Toyota";
         System.out.println(car1.color);
+        car1.run();
 
         Car car2 = new Car();
         car2.color = "Blue";

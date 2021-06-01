@@ -17,7 +17,7 @@ public class Bob {
                 System.out.println("Ugh! I'm so over this!");
                 finished = true;
             } else {
-                System.out.println("Whatever.");
+                System.out.println("Whatever. ");
             }
         } while(finished == false);
     }

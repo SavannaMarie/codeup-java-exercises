@@ -23,7 +23,7 @@ public class Input {
     public boolean yesNo(String userBoolean){
         System.out.print(userBoolean);
         String input = this.scanner.nextLine();
-        System.out.print("Your answer is boolean ");
+        System.out.print("Your answer is boolean  ");
         return (input.trim().equalsIgnoreCase("y") || input.trim().equalsIgnoreCase("yes"));
     }
 

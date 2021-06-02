@@ -24,7 +24,7 @@ public class Input {
         System.out.print(userBoolean);
         String input = this.scanner.nextLine();
         System.out.print("Your answer is boolean ");
-        return (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes"));
+        return (input.trim().equalsIgnoreCase("y") || input.trim().equalsIgnoreCase("yes"));
     }
 
 

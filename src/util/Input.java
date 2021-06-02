@@ -22,8 +22,11 @@ public class Input {
         String input = this.scanner.nextLine();
         return (input.trim().equalsIgnoreCase("y") || input.trim().equalsIgnoreCase("yes"));
     }
+    public int getInt(){
+        return this.scanner.nextInt();
+    }
     public int getInt(int min, int max) {
-        System.out.printf("Give me a number between %d and %d\n", min, max);
+        System.out.printf("Give me a number between %d and %d%n", min, max);
         int userInput = scanner.nextInt();
         if((userInput < min) || (userInput > max)) {
             System.out.println("Please stay between the numbers. Try again!");
@@ -41,9 +44,8 @@ public class Input {
         return userInput;
     }
     public double getDouble(){
-        System.out.println("Please enter a decimal number!");
-        double userInput = scanner.nextDouble();
-        return userInput;
+        return scanner.nextDouble();
+
     }
 
 }

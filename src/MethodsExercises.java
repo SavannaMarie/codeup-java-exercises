@@ -72,6 +72,6 @@ public class MethodsExercises {
 //        System.out.println(modulus(20, 3));
 //        System.out.println(getInteger(1, 20));
 //        factorial();
-        diceRoll();
+          diceRoll();
     }
 }

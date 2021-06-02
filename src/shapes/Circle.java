@@ -1,7 +1,4 @@
 package shapes;
-//import java.util.Scanner;
-import util.Input;
-
 public class Circle {
     private double radius;
 

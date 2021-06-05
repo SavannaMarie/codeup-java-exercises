@@ -7,8 +7,6 @@ public class Square extends Rectangle {
         super(side, side);
         this.side = side;
     }
-
-
     public double getArea() {
         return (side * side);
     }

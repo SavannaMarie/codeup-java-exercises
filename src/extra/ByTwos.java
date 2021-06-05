@@ -7,8 +7,17 @@ public class ByTwos implements Series {
         val = 0;
     }
 
-    public int getNext(){
-        val += 2;
+    public int getNext() {
+        if (val >= max) {
+            System.out.println(ERRORMSG);
+        } else {
+            val += 2;
+        }
+        return val;
+    }
+
+    public int getPrev(){
+        val -= 2;
         return val;
     }
 }

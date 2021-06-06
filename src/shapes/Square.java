@@ -13,12 +13,10 @@ public class Square extends Quadrilateral {
     }
     public void setLength(double length) {
         this.length = length;
-        this.width = width;
     }
 
-    @Override
-    public void setWidth(double n) {
-        this.length = length;
+
+    public void setWidth(double width) {
         this.width = width;
     }
 }

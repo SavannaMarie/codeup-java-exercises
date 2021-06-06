@@ -20,4 +20,3 @@ public class Square extends Quadrilateral {
         this.width = width;
     }
 }
-

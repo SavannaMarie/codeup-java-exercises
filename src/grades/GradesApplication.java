@@ -34,6 +34,9 @@ public class GradesApplication {
         students.put("BigFatCatMeow", killer);
         students.put("MarkysMom19", mom);
 
+
+        System.out.println("Welcome!");
+        System.out.println("Here are the GitHub usernames of our students: ");
         System.out.println(students.keySet());
 
 
@@ -45,7 +48,6 @@ public class GradesApplication {
         do {
             System.out.println("Please select a username to view a student's information: ");
             String selection = scanner.nextLine();
-            System.out.println(selection);
             if (!students.containsKey(selection)) {
                 System.out.println("Invalid username. Please try again");
             }
@@ -56,6 +58,7 @@ public class GradesApplication {
                 System.out.println("Would you like to select another student? y/n");
                 String answer = scanner.nextLine().toLowerCase();
                 if (!answer.equals("y")) {
+                    System.out.println("Goodbye! Thank you for using our services!");
                     confirm = false;
                 }
             }

@@ -32,10 +32,10 @@ public class Student {
     }
     public double getGradeAverage() {
         double total = 0.0;
-        for (Integer grade : grades) {
+        for (Integer grade : this.grades) {
             total = total + grade;
         }
-        double gradesAdded = total / grades.size();
+        double gradesAdded = total / this.grades.size();
         return gradesAdded;
     }
 

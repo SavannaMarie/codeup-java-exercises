@@ -47,5 +47,13 @@ public class Input {
         return scanner.nextDouble();
 
     }
+    public int getInt2(){
+        try {
+            return Integer.parseInt(getString("Enter a number"));
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt2();
+        }
+    }
 
 }

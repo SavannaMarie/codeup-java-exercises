@@ -1,4 +1,5 @@
 import util.Input;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -59,9 +60,9 @@ public class GroceryApp {
     public static void main(String[] args) {
         ArrayList<GroceryApp> newList = new ArrayList<>();
         System.out.println("Welcome! Thank you for using our service!");
-        boolean createList = input.yesNo("Would you like to create a list for your groceries?");
+        boolean createList = input.yesNo("Would you like to add groceries to your list?");
 
-        if (createList){
+        do {
             Scanner scanner = new Scanner(System.in);
             displayCategories();
             String category = groceryCategory();
@@ -72,9 +73,13 @@ public class GroceryApp {
             newList.add(new GroceryApp(groceryItem, category, quantity));
             for (GroceryApp items : newList) {
                 System.out.printf("%s %s %s", items.getItemAmount(), items.getCategory(), items.getItem());
-            }
+                System.out.println("\nWould you like to add more?");
+                createList = scanner.nextBoolean();
 
-        }
+            } if (createList == false) {
+                System.out.println("Thank you come again!");
+            }
+        } while (createList);
 
     }
 }

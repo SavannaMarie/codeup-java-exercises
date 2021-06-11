@@ -34,8 +34,29 @@ public class Input {
         }
         return userInput;
     }
+    public int getInt(String prompt){
+        int number;
+        try {
+            number = Integer.valueOf(getString(prompt));
+            return number;
+        } catch (NumberFormatException nfe){
+            System.out.println("Wrong input, try again: ");
+            return getInt(prompt);
+        }
+    }
+    public int getInt(String prompt, int min, int max) {
+        System.out.println(prompt);
+        int userNumber = this.scanner.nextInt();
+
+        if(userNumber >= min && userNumber <= max) {
+            return userNumber;
+        } else {
+            System.out.println("That number is invalid.");
+            return getInt(min, max);
+        }
+    }
     public double getDouble(double min, double max) {
-        System.out.printf("Give me a number between %f and %f\n", min, max);
+        System.out.printf("Give me a decimal between %f and %f\n", min, max);
         double userInput = this.scanner.nextDouble();
         if((userInput < min) || (userInput > max)) {
             System.err.println("Please stay between the numbers. Try again!");
@@ -46,6 +67,21 @@ public class Input {
     public double getDouble(){
         return scanner.nextDouble();
 
+    }
+    public double getDouble(String prompt) {
+        System.out.println(prompt);
+        return this.scanner.nextDouble();
+    }
+    public double getDouble(String prompt, double min, double max) {
+        System.out.println(prompt);
+        double userNumber = this.scanner.nextDouble();
+
+        if(userNumber >= min && userNumber <= max) {
+            return userNumber;
+        } else {
+            System.out.println("That number is invalid.");
+            return getDouble(min, max);
+        }
     }
     public int getInt2(){
         try {

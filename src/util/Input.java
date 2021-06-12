@@ -17,6 +17,7 @@ public class Input {
     public boolean yesNo() {
         return yesNo("Enter 'yes' or 'no'");
     }
+
     public boolean yesNo(String userBoolean){
         System.out.print(userBoolean);
         String input = this.scanner.nextLine();

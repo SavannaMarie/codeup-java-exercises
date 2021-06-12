@@ -10,6 +10,7 @@ public class CollectionsLecture {
         collectionOfNums.add(16);
         collectionOfNums.add(44);
         collectionOfNums.add(32);
+        collectionOfNums.add(32);
         collectionOfNums.add(1, 24);
 
         collectionOfNums.forEach(System.out::println);

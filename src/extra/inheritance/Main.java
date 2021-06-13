@@ -12,5 +12,8 @@ public class Main {
         bike.go();
         bike.stop();
         System.out.println(bike.speed);
+
+        System.out.println("Car doors " + car.doors);
+        System.out.println("Bike pedals " + bike.pedals);
     }
 }

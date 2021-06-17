@@ -3,6 +3,8 @@ package extra;
 public interface Series {
 
 
+
+
     int max = 10;
     String ERRORMSG = "Can't go over value " + max;
 
